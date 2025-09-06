@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize app</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-purple-100 p-10">
+    <div class="lg:border lg:p-4 rounded-lg flex flex-col  items-center">
+        <div class=" text-center ">
+            <h1 class="text-5xl font-bold">Daily Quiz</h1>
+            <p>A fun question every day to test your knowledge!</p>
+        </div>
+        <div id="main" class="lg:mt-6 mt-4 lg:w-[60vw] p-4">
+            <h1 id="question" class="lg:text-3xl md:text-2xl font-semibold ">Question</h1>
+            <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4  mt-6 mb-6 px-6 ">
+                <li class="border px-4 py-2 rounded-lg"><input type="radio" name="answer" class="answer " id="a">
+                    <label for="a" id="option1" class="options">answer</label>
+                </li>
+                <li class="border px-4 py-2 rounded-lg"><input type="radio" name="answer" class="answer" id="b">
+                    <label for="b" id="option2" class="options">answer</label>
+                </li>
+                <li class="border px-4 py-2 rounded-lg"><input type="radio" name="answer" class="answer" id="c">
+                    <label for="c" id="option3" class="options">answer</label>
+                </li>
+                <li class="border px-4 py-2 rounded-lg"><input type="radio" name="answer" class="answer" id="d">
+                    <label for="d" id="option4" class="options">answer</label>
+                </li>
+            </ul>
+            <div class="flex  gap-x-12 justify-between px-10 items-center">
+                <p class="text-xl font-semibold" id="qesCount"></p>
+                <button type="submit" id="submit"
+                    class="px-10 py-2 rounded-lg bg-teal-600 flex items-center gap-x-6 text-white cursor-pointer"><span>Next</span><i
+                        class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
